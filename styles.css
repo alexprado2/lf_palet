@@ -22,15 +22,22 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 5%;
-    background-color: white;
+    background-color: #E6E1D9;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-.logo img {
-    max-height: 100px;
-       
+.logo {
+    display: flex;
+    align-items: center;
+    height: 80px;  
+    overflow: hidden;  
 }
 
+.logo img {
+    max-height: 170%;
+    width: auto;      
+    object-fit: contain; 
+}
 nav ul {
     display: flex;
     list-style: none;
@@ -51,7 +58,8 @@ nav ul li a:hover {
 }
 
 .hero {
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/api/placeholder/1500/800');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('src/img/img4.jpeg');
+    /* background-color: #3B1D01; */
     background-size: cover;
     background-position: center;
     color: white;
@@ -87,6 +95,7 @@ nav ul li a:hover {
 .about, .services, .contact {
     padding: 50px 5%;
     text-align: center;
+    background-color: #E6E1D9;
 }
 
 .about-content {
@@ -109,7 +118,7 @@ nav ul li a:hover {
 }
 
 .service-card {
-    background-color: white;
+    background-color: #E6E1D9;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     overflow: hidden;
@@ -175,7 +184,7 @@ nav ul li a:hover {
 }
 
 footer {
-    background-color: var(--text-color);
+    background-color: #7F502D;
     color: white;
     text-align: center;
     padding: 20px;
